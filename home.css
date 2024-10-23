@@ -1,31 +1,74 @@
-/* Css untuk text sizing dan spasi */ 
+/* CSS untuk Text Sizing dan Spasi */
 h2 {
-    font-size: 3rem; 
-    margin-bottom: 1rem; 
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.meditate {
+  width: 100%; /* Membuat gambar penuh di container */
+  max-width: 1200px; /* Membatasi ukuran maksimal gambar */
+  height: auto; /* Mempertahankan proporsi gambar */
+  transition: transform 0.3s ease; /* Animasi saat gambar berubah */
+}
+
+.meditate-img:hover {
+  transform: scale(1.1); /* Memperbesar gambar saat di-hover */
+}
+
+/* Carousel image styling */
+.carousel-inner img {
+  width: 100%; 
+  height: 750px;
+  object-fit: cover;
+}
+
+/* Responsiveness for Tablets and Smaller Devices */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
   }
   
   h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
   }
-  
+
   p {
+    font-size: 1.3rem;
+  }
+
+  .carousel-inner img {
+    height: 350px;
+  }
+}
+
+/* Responsiveness for Mobile Devices (Up to 480px) */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
     font-size: 1.5rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
   }
-  
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 2.5rem;
-    }
-  
-    h3 {
-      font-size: 1.8rem;
-    }
-  
-    p {
-      font-size: 1.3rem;
-    }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 1.2rem;
   }
-  
+
+  .carousel-inner img {
+    height: 250px; /* Lebih kecil lagi untuk perangkat seluler */
+  }
+}
