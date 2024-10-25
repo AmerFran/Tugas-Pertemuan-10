@@ -1,45 +1,78 @@
-.navbar {
+  body {
+  background-color: #1d1d1d; 
+  color: #fff; 
+  font-family: 'Montserrat', sans-serif;
+  }
+
+  .navbar {
     margin-bottom: 0;
   }
-  .hero-image {
+
+  .navbar .btn-primary {
+    background-color: #ff3d2f;
+    border-color: #ff3d2f;
+  }
+  
+  .navbar .btn-primary:hover {
+    background-color: #ff0000;
+    border-color: #ff0000;
+  }
+
+  .navbar-brand, .navbar-nav .nav-link {
+    color: #000; 
+  }
+
+  .hero-image{
     width: 100%; 
-    height: auto;
+    height: 80%;
     display: block;
     margin: 0 auto;
-  }  
+  }
+
   .contact-section {
     padding: 50px 0;
     background-color: #1d1d1d;
     color: #fff;
   }
+
   .form-section {
     background-color: #333;
     padding: 40px;
     border-radius: 10px;
   }
+
   .form-section h2 {
     color: #fff;
   }
+
   .form-control, .btn {
     border-radius: 5px;
   }
+
   .hours-section {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    font-size: 25px;
   }
+
   .contact-details p {
     margin-bottom: 5px;
+    font-size: 25px;
   }
+
   .contact-details a {
-    color: #ffab00;
+    color: #ffffff;
     text-decoration: none;
   }
+
   .contact-details a:hover {
     text-decoration: underline;
   }
+
   footer h2 {
   font-size: 2rem;
   font-weight: bold;
   }
+
   footer p {
   font-size: 1.2rem;
   margin: 0;
@@ -73,3 +106,35 @@
   padding: 30px 0;
   text-align: center;
   }
+
+@media (max-width: 768px) {
+  .navbar .navbar-nav {
+      font-size: 1.2rem; 
+  }
+
+  .form-section, .hours-section, .contact-details {
+      margin-bottom: 20px; 
+  }
+
+  .contact-section {
+      padding: 30px 0; 
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .navbar-nav {
+      font-size: 1rem; 
+  }
+
+  .form-section h2,
+  .hours-section h3,
+  .contact-details h3 {
+      font-size: 1.5rem; 
+  }
+
+  .form-section p,
+  .hours-section p,
+  .contact-details p {
+      font-size: 0.9rem;
+  }
+}

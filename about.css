@@ -1,0 +1,162 @@
+body {
+    background-color: #1d1d1d; 
+    color: #fff; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar .btn-primary {
+    background-color: #ff3d2f;
+    border-color: #ff3d2f;
+}
+  
+.navbar .btn-primary:hover {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #000; 
+}
+
+hgroup {
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+  
+p {
+    font-size: 1.5rem;
+}
+  
+.card {
+margin-top: 20px;
+}
+
+.card-img-top {
+    height: 390px;
+    object-fit: cover; 
+    width: 100%;
+}
+  
+.card {
+    margin-bottom: 20px;
+}
+  
+.card-body {
+    text-align: center;
+}
+section.bg-dark {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  section.bg-dark h2 {
+    font-size: 2.5rem;
+  }
+  
+  section.bg-dark h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  section.bg-dark input {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  section.bg-dark .btn-primary {
+    padding: 0.8rem 2rem;
+    font-size: 1.3rem;
+    background-color: #dc2717;
+    border-color: #d62212;
+  }
+  
+  section.bg-dark .btn-primary:hover {
+    background-color: #ff3d2f;
+    border-color: #ff3d2f;
+  }
+  
+footer h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a img {
+    transition: opacity 0.3s;
+}
+
+footer a img:hover {
+    opacity: 0.7;
+}
+
+footer .container {
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer .bottom-copyright {
+    background-color: #333;
+    padding: 30px 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .fs-1 {
+        font-size: 2.5rem;
+    }
+
+    .fs-2 {
+        font-size: 2rem;
+    }
+
+    .fs-3 {
+        font-size: 1.75rem;
+    }
+
+    .fs-4 {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.25rem;
+    }
+    
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .subscribe-button {
+        width: 100%;
+    }
+}

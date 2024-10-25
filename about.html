@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Lifestyle Theme</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="about.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,10 +32,10 @@
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-primary btn-lg" href="#" role="button">Subscribe</a>
+              <a class="btn btn-primary btn-lg" href="subscribe.html" role="button">Subscribe</a>
             </li>
           </ul>
         </div>
@@ -48,9 +46,9 @@
       <div class="row">
         <section class="col-md-12">
           <hgroup>
-            <h2 class="fs-1">About Us</h2>
-            <h3 class="fs-3">Our Story & Vision</h3>
+          <h2 class="fs-1">About Us</h2>
           </hgroup>
+          <h3 class="fs-2">Our Story & Vision</h3>
           <p class="fs-4">
             Lifestyle Vibes was created with a simple goal: to help people live
             better, healthier, and more fulfilling lives. We believe that true
@@ -76,17 +74,89 @@
             fitness, fashion, and mindfulness to help our audience elevate their
             everyday experiences.
           </p>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <div class="card">
+                <img src="p8.jpg" class="card-img-top"/>
+                <div class="card-body">
+                  <h5 class="card-title">Fitness</h5>
+                  <p class="card-text">
+                    Fitness is not just about physical strength; it's about a balance
+                    between body and mind. Embrace regular exercise, nutrition, and
+                    mindfulness for a healthier life.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <img src="p9.jpg" class="card-img-top"/>
+                <div class="card-body">
+                  <h5 class="card-title">Fashion</h5>
+                  <p class="card-text">
+                    Fashion is a form of self-expression. Discover the latest trends and
+                    learn how to build a wardrobe that reflects your unique style and
+                    personality.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <h3>Meet the Team</h3>
           <p>
             Our team consists of wellness enthusiasts, fitness experts, and
             lifestyle gurus. We're dedicated to bringing you the latest insights
             and trends to help you live your best life.
           </p>
+          
+          <!-- Team Cards Section -->
+          <div class="row mt-4 text-center">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="p10.jpg" class="card-img-top" alt="Team member 1" />
+                <div class="card-body">
+                  <h5 class="card-title">Sam Sulek</h5>
+                  <p class="card-text">
+                    Sam Sulek is a Youtuber from United States with over 3.7 million subcriber on youtube and a fitness influencer that will 
+                    teach you correct technique for increasing muscle mass.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="p12.jpg" class="card-img-top" alt="Team member 2" />
+                <div class="card-body">
+                  <h5 class="card-title">Wilmer Francesco</h5>
+                  <p class="card-text">
+                    Wilmer Francesco is a Student from Tarumanagara University and is designing 
+                    a fashion website about fashion that's popular and a lifestyle in these day that are up to date that people can follow.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="p11.jpg" class="card-img-top" alt="Team member 3" />
+                <div class="card-body">
+                  <h5 class="card-title">Karl Lagerfeld</h5>
+                  <p class="card-text">
+                    Karl Lagerfeld is a German fashion designer and photographer best known as the 
+                    creative power behind the modern revival of Chanel, the legendary French fashion house 
+                    founded by Coco Chanel in the early 20th century. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </section>
       </div>
     </main>
 
-    <section aria-label="Subscribe example" class="bg-light py-5">
+    <section aria-label="Subscribe example" class="bg-dark py-5">
       <div class="container">
         <article>
           <hgroup>
@@ -117,7 +187,7 @@
               />
             </div>
             <div class="col-12">
-              <button type="submit" class="btn btn-primary" onclick="event.preventDefault()">
+              <button type="button" class="btn btn-primary" onclick="window.location.href='subscribe.html'">
                 Subscribe
               </button>
             </div>
@@ -126,12 +196,29 @@
       </div>
     </section>
 
-    <footer class="container text-center py-3">
-      <small>
-        <a href="#">Privacy Policy</a> •
-        <a href="#">Terms & Conditions</a>
-      </small>
-    </footer>
+        <!-- Sosial Media -->
+        <footer>
+          <div class="container text-center">
+              <h2>Lifestyle Vibes</h2>
+              <p>Life Better, Live Happier</p>
+              <div class="mt-4">
+                  <a href="https://github.com/AmerFran" target="_blank" class="me-3">
+                      <img src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png" alt="GitHub" />
+                  </a>
+                  <a href="https://www.instagram.com/amerfrancesco/" target="_blank" class="me-3">
+                      <img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" alt="Instagram" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/amer-f-337088308/" target="_blank">
+                      <img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png" alt="LinkedIn" />
+                  </a>
+              </div>
+          </div>
+  
+          <!--Copyright -->
+          <div class="bottom-copyright">
+              <p class="mb-0">&copy; Copyright 2024 | All Rights Reserved | Designed by Wilmer Francesco </p>
+          </div>
+      </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>

@@ -10,7 +10,22 @@
     />
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #1d1d1d; 
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .navbar .btn-primary {
+            background-color: #ff3d2f;
+            border-color: #ff3d2f;
+        }
+
+        .navbar .btn-primary:hover {
+            background-color: #ff0000;
+            border-color: #ff0000;
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #000; 
         }
 
         .form-container {
@@ -38,9 +53,81 @@
         .btn-secondary {
             margin-top: 10px;
         }
+
+        footer h2 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        footer p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a img {
+            transition: opacity 0.3s;
+        }
+
+        footer a img:hover {
+            opacity: 0.7;
+        }
+
+        footer .container {
+            padding-bottom: 20px;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        footer .bottom-copyright {
+            background-color: #333;
+            padding: 30px 0;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand fs-2" href="#"><strong>Lifestyle Vibes</strong></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fs-3">
+                  <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-primary btn-lg" href="subscribe.html" role="button">Subscribe</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
     <div class="form-container">
         <h2 class="form-title">Order Form</h2>
@@ -78,6 +165,31 @@
         </form>
     </div>
 
+    <!-- Sosial Media -->
+    <footer>
+        <div class="container text-center">
+            <h2>Lifestyle Vibes</h2>
+            <p>Life Better, Live Happier</p>
+            <div class="mt-4">
+                <a href="https://github.com/AmerFran" target="_blank" class="me-3">
+                    <img src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png" alt="GitHub" />
+                </a>
+                <a href="https://www.instagram.com/amerfrancesco/" target="_blank" class="me-3">
+                    <img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" alt="Instagram" />
+                </a>
+                <a href="https://www.linkedin.com/in/amer-f-337088308/" target="_blank">
+                    <img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png" alt="LinkedIn" />
+                </a>
+            </div>
+        </div>
+
+        <!--Copyright -->
+        <div class="bottom-copyright">
+            <p class="mb-0">&copy; Copyright 2024 | All Rights Reserved | Designed by Wilmer Francesco </p>
+        </div>
+    </footer>
+
+    <!--Javascript-->
     <script>
         document.getElementById('orderForm').addEventListener('submit', function (e) {
             e.preventDefault();
